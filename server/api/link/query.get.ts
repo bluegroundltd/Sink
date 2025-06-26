@@ -11,8 +11,5 @@ export default eventHandler(async (event) => {
       }
     }
   }
-  throw createError({
-    status: 404,
-    statusText: 'Not Found',
-  })
+  return sendRedirect(event, 'https://theblueground.com', 302)
 })
