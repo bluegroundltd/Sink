@@ -12,7 +12,7 @@ export default eventHandler(async (event) => {
     }
   }
   throw createError({
-    status: 404,
-    statusText: 'Not Found',
+    statusCode: 404,
+    statusMessage: 'Not Found',
   })
 })
